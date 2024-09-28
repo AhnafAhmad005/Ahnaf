@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     int n, i, j;
-    printf("Enter the number of elements: ");
+
     scanf("%d", &n);
     int arr[n];
     printf("Enter %d integers:\n", n);
