@@ -9,16 +9,16 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    int count0 = 0, count1 = 0, count2 = 0;
+    int c= 0, c1 = 0, c2 = 0;
     for (int i = 0; i < n; i++) {
-        if (arr[i] == 0) count0++;
-        else if (arr[i] == 1) count1++;
-        else if (arr[i] == 2) count2++;
+        if (arr[i] == 0) c++;
+        else if (arr[i] == 1) c1++;
+        else if (arr[i] == 2) c2++;
     }
-    for (int i = 0; i < count0; i++) arr[i] = 0;
-    for (int i = count0; i < count0 + count1; i++) arr[i] = 1;
-    for (int i = count0 + count1; i < count0+count1+count2; i++) arr[i] = 2;
-    for (int i = 0; i < count0+count1+count2; i++) {
+    for (int i = 0; i < c; i++) arr[i] = 0;
+    for (int i = c; i < c + c1; i++) arr[i] = 1;
+    for (int i = c + c1; i < c+c1+c2; i++) arr[i] = 2;
+    for (int i = 0; i < c+c1+c2; i++) {
         printf("%d ", arr[i]);
     }
 
